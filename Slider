@@ -1,0 +1,36 @@
+			# WIDGET HTML 
+      # ===========
+        <div class="agrid">
+					<figure class="effect-lily">
+						<img src="https://mcljanard.com/wp-content/uploads/2021/05/Jubilee-fountain-scaled.jpg" alt="img12"/>
+						<figcaption>
+							<div>
+								<h2>West Newton <span><br>Primary School</span></h2>
+								<p>Lily likes to play with crayons and pencils</p>
+							</div>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+					<figure class="effect-lily">
+						<img src="https://mcljanard.com/wp-content/uploads/2021/05/Jubilee-fountain-scaled.jpg" alt="img1"/>
+						<figcaption>
+							<div>
+								<h2>Flitcham <span><br>Primary School</span></h2>
+								<p>Lily likes to play with crayons and pencils</p>
+							</div>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>
+					<figure class="effect-lily">
+						<img src="https://mcljanard.com/wp-content/uploads/2021/05/Jubilee-fountain-scaled.jpg" alt="img1"/>
+						<figcaption>
+							<div>
+								<h2>Friends of<span><br> Sandringham Federation</span></h2>
+								<p>Lily likes to play with crayons and pencils</p>
+							</div>
+							<a href="#">View more</a>
+						</figcaption>			
+					</figure>					
+				</div>
+        
+        
