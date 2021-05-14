@@ -1,0 +1,8 @@
+# Widget HTML
+
+<div class="btn-group d-flex" role="group">
+  <button type="button" class="btn btn-secondary w-100" style="height:62px; border-radius: 0px;">Sandringham Federation</button>
+	<button type="button" class="btn btn-primary w-100" style="height:62px; border-radius: 0px; box-shadow: -10px 0px 10px 1px #33333333;">West Newton</button>
+  <button type="button" class="btn btn-warning w-100" style="height:62px; border-radius: 0px;box-shadow: -10px 0px 10px 1px #33333333;">Flitcham</button>
+  <button type="button" class="btn btn-success w-100" style="height:62px; border-radius: 0px; box-shadow: -10px 0px 10px 1px #33333333;">Friends of Sandringham Federation</button>
+</div>
