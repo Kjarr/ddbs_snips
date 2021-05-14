@@ -1,0 +1,205 @@
+/* Base Settings (Fonts etc) */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+	font-family: 'Varela Round', sans-serif;
+}
+h2, h3, h4 {
+	font-family: 'Poppins', sans-serif;
+}
+/* End Base Settings (Fonts etc) */
+/*----------------------------------------------------------------*/
+/* Colour and Graphic Overides for the Child Theme */
+.bg-ddbs-blue{
+	background-color: #020075 !important;
+	background-image: linear-gradient(120deg, #011f4b, #4169e1)!important;
+}
+.bg-ddbs-teal {
+ 	 background-image: url("https://cloud.duckduckuk.com/dev/wp-content/uploads/2020/11/FAVPNG_flat-design-forest-tree_nxjjRU9m.png"); 
+	 background-color: rgba(0, 0, 0, 0.0) !important;
+	 background-position: center;
+ 	 background-repeat: repeat-x;
+	/*background-size: cover; */
+ 	 min-height: 250px;
+	/*border-radius: 25px 25px 0 0;*/
+}
+/* End Colour and Graphic Overides */
+/* ----------------------------------------------------------------*/
+/* Theme Section Overides */
+.navbar {
+	/*box-sizing: padding-box;*/
+    min-height: 150px !important;
+}
+.navbar-brand {
+	font-size: 1.8rem;
+  	background-image: url("https://cloud.duckduckuk.com/dev/wp-content/uploads/2020/11/crown_sm.png")!important; 
+	background-position: center;
+  	background-repeat: no-repeat;	
+ 	padding-top: 15px;
+  	padding-bottom: 15px;
+	height: 175px;
+}
+
+.navbar-brand-dark {
+ 	padding-top: 15px;
+  	padding-bottom: 15px;
+	height: 175px;
+}
+
+/* End Theme Section Overides */
+
+
+/* ********************************************* */
+/* Hover Effects */
+
+.agrid {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	/*max-width: 1000px;*/
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.agrid figure {
+	position: relative;
+	float: center;
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 auto;
+	/*min-width: 48%;*/
+	/*max-width: 480px;*/
+	max-height: 480px;
+	width: 33%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.agrid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.agrid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.agrid figure figcaption::before,
+.agrid figure figcaption::after {
+	pointer-events: none;
+}
+
+.agrid figure figcaption,
+.agrid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.agrid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.agrid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.agrid figure h2,
+.agrid figure p {
+	margin: 0;
+}
+
+.agrid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/* Individual effects */
+
+/*---------------*/
+/***** Lily *****/
+/*---------------*/
+
+figure.effect-lily img {
+	max-width: none;
+	width: -webkit-calc(100% + 50px);
+	width: calc(100% + 50px);
+	opacity: 0.6;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-40px,0, 0);
+	transform: translate3d(-40px,0,0);
+}
+
+figure.effect-lily figcaption {
+	text-align: left;
+}
+
+figure.effect-lily figcaption > div {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	height: 50%;
+}
+
+figure.effect-lily h2,
+figure.effect-lily p {
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+figure.effect-lily h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-lily p {
+	color: rgba(255,255,255,0.8);
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover p {
+	opacity: 1;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover h2,
+figure.effect-lily:hover p {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-lily:hover p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
+}
